@@ -1,21 +1,24 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-    coin_root: {
+    coin_div: {
         flexGrow: 1,
     },
-    coin_container: {
-        padding: '15px',
-        margin: '20px',
-        border: '1px solid gray',
+    coin_grid: {
+        padding: '25px',
+        marginTop: '10px',
+        marginBottom: '10px',
         borderRadius: '3px',
         backgroundColor: '#1a1a1c',
         '&:hover': {
             backgroundColor: '#2a067e',
         },
     },
+    coin_rank: {
+        marginBottom: '10px',
+    },
     coin: {
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
             textAlign: 'center',
         },
         '& img': {
@@ -28,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
         },
         '& p': {
             textTransform: 'uppercase',
+            marginBottom: '15px',
         }
     },
     coin_data: {

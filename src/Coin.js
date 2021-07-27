@@ -7,18 +7,25 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const Coin = ({ name, image, symbol, price, volume, priceChange, marketCap, rank }) => {
     const classStyle = useStyles();
     return (
-        <div className={classStyle.coin_root}>
-            <Grid className={classStyle.coin_container}>
-                <sub>Rank {rank}</sub><hr /><br />
-                <Grid container spacing={2} direction="row" alignItems="center" justify="center">
-                    <Grid className={classStyle.coin} item md={1} sm={12} xs={12}>
-                        <img src={image} alt="crypto" />
-                    </Grid>
-                    <Grid className={classStyle.coin} item md={2} sm={12} xs={12}>
-                        <h2>{name}</h2>
-                    </Grid>
-                    <Grid className={classStyle.coin} item md={1} sm={12} xs={12}>
-                        <p>{symbol}</p>
+        <div className={classStyle.coin_div}>
+            <Grid className={classStyle.coin_grid}>
+                <div className={classStyle.coin_rank}>
+                    <sub>Rank {rank}</sub>
+                    <hr />
+                </div>
+                <Grid container spacing={0} direction="row" alignItems="center" justify="center">
+                    <Grid item md={4} sm={12} xs={12}>
+                        <Grid container spacing={0} direction="row" alignItems="center" justify="center">
+                            <Grid className={classStyle.coin} item lg={3} md={12} sm={12} xs={12}>
+                                <img src={image} alt="crypto" />
+                            </Grid>
+                            <Grid className={classStyle.coin} item lg={6} md={12} sm={12} xs={12}>
+                                <h2>{name}</h2>
+                            </Grid>
+                            <Grid className={classStyle.coin} item lg={3} md={12} sm={12} xs={12}>
+                                <p>{symbol}</p>
+                            </Grid>
+                        </Grid>
                     </Grid>
                     <Grid className={classStyle.coin_data} item md={8} sm={12} xs={12}>
                         <Grid container spacing={3}>
