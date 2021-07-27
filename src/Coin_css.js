@@ -15,11 +15,9 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     coin: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        textAlign: 'center',
+        [theme.breakpoints.down('sm')]: {
+            textAlign: 'center',
+        },
         '& img': {
             height: '50px',
             width: '50px',
