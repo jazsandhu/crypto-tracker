@@ -13,9 +13,9 @@ const Coin = ({ name, image, symbol, price, volume, priceChange, marketCap, rank
                     <sub>Rank {rank}</sub>
                     <hr />
                 </div>
-                <Grid container spacing={0} direction="row" alignItems="center" justify="center">
+                <Grid className={classStyle.coin_container} container spacing={0}>
                     <Grid item md={4} sm={12} xs={12}>
-                        <Grid container spacing={0} direction="row" alignItems="center" justify="center">
+                        <Grid className={classStyle.coin_container} container spacing={0}>
                             <Grid className={classStyle.coin} item lg={3} md={12} sm={12} xs={12}>
                                 <img src={image} alt="crypto" />
                             </Grid>

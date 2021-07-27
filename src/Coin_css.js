@@ -6,8 +6,7 @@ const useStyles = makeStyles((theme) => ({
     },
     coin_grid: {
         padding: '25px',
-        marginTop: '10px',
-        marginBottom: '10px',
+        marginBottom: '20px',
         borderRadius: '3px',
         backgroundColor: '#1a1a1c',
         '&:hover': {
@@ -16,6 +15,11 @@ const useStyles = makeStyles((theme) => ({
     },
     coin_rank: {
         marginBottom: '10px',
+    },
+    coin_container: {
+        direction: 'row',
+        alignItems: 'center',
+        justify: 'center'
     },
     coin: {
         [theme.breakpoints.down('md')]: {
