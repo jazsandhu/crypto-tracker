@@ -1,6 +1,6 @@
 import React from 'react';
 import useStyles from './Coin_css';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -18,12 +18,12 @@ const Coin = ({ name, image, symbol, price, volume, priceChange, marketCap, rank
                     </Grid>
                     <Grid className={classStyle.coin_data} item md={8} sm={12} xs={12}>
                         <Grid container spacing={4}>
-                            <Grid className={classStyle.coin_data} item lg={3} md={6} sm={6} xs={12}>
+                            <Grid className={classStyle.coin_data} item lg={6} md={6} sm={6} xs={12}>
                                 <sub>Current Price</sub>
                                 <hr />
                                 <p>${price.toLocaleString()}</p>
                             </Grid>
-                            <Grid className={classStyle.coin_data} item lg={3} md={6} sm={6} xs={12}>
+                            <Grid className={classStyle.coin_data} item lg={6} md={6} sm={6} xs={12}>
                                 <sub>Price Change <span>24h</span></sub>
                                 <hr />
                                 {
@@ -32,12 +32,12 @@ const Coin = ({ name, image, symbol, price, volume, priceChange, marketCap, rank
                                         <p style={{ color: '#04ff00' }}><ExpandLessIcon style={{fill: "#04ff00"}} />{priceChange.toFixed(2)}</p>
                                 }
                             </Grid>
-                            <Grid className={classStyle.coin_data} item lg={3} md={6} sm={6} xs={12}>
+                            <Grid className={classStyle.coin_data} item lg={6} md={6} sm={6} xs={12}>
                                 <sub>Volume</sub>
                                 <hr />
                                 <p>${volume.toLocaleString()}</p>
                             </Grid>
-                            <Grid className={classStyle.coin_data} item lg={3} md={6} sm={6} xs={12}>
+                            <Grid className={classStyle.coin_data} item lg={6} md={6} sm={6} xs={12}>
                                 <sub>Market Cap</sub>
                                 <hr />
                                 <p>${marketCap.toLocaleString()}</p>

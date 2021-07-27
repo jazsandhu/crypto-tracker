@@ -14,7 +14,7 @@ function App() {
         setCoins(res.data);
         console.log(res.data);
       }).catch(err => {
-        alert('Crypto API failed to fetch. Error: ' + err)
+        alert('Crypto API failed to fetch. Error: ' + err);
       })
   }, []);
 
